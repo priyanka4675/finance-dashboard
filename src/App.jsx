@@ -16,24 +16,18 @@ function App() {
     .reduce((a, b) => a + b.amount, 0);
 
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial" }}>
+    <div style={{ padding: "20px" }}>
       <h1>Finance Dashboard</h1>
 
       <RoleToggle role={role} setRole={setRole} />
 
-      <div style={{ display: "flex", gap: "10px" }}>
-        <SummaryCard title="Income" value={income} />
-        <SummaryCard title="Expense" value={expense} />
-        <SummaryCard title="Balance" value={income - expense} />
-      </div>
+      <SummaryCard title="Income" value={income} />
+      <SummaryCard title="Expense" value={expense} />
+      <SummaryCard title="Balance" value={income - expense} />
 
       <Chart data={data.filter(d => d.type === "expense")} />
 
-      {role === "admin" ? (
-        <button>Add Transaction</button>
-      ) : (
-        <p>Viewer Mode</p>
-      )}
+      {role === "admin" ? <button>Add</button> : <p>Viewer</p>}
 
       <Insights data={data} />
       <Transactions data={data} />
