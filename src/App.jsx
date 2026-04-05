@@ -16,7 +16,8 @@ function App() {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h1>Rajeev Finance Dashboard</h1>
+      <h1> priyanka Finance Dashboard</h1>
+      <p>Simple financial tracking dashboard</p>
 
       <RoleToggle role={role} setRole={setRole} />
 
