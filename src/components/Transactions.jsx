@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import React from "react";
 export default function Transactions({ data }) {
   const [search, setSearch] = useState("");
   const [typeFilter, setTypeFilter] = useState("all");
