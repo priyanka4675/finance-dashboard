@@ -1,15 +1,19 @@
-# Finance Dashboard
+# Priyanka Finance Dashboard
 
-This project is a simple frontend dashboard to visualize financial activity.
+This is a simple frontend finance dashboard built using React.
 
 ## Features
 - Summary cards (Income, Expense, Balance)
-- Transactions list with filtering
-- Role-based UI (Viewer/Admin)
+- Transactions list
+- Role-based UI (Admin / Viewer)
 - Insights section
 
+## Tech Stack
+- React
+- JavaScript
+
 ## Approach
-Focused on clean UI, reusable components, and simple state handling using React.
+The project is built using a component-based architecture. State is managed using React hooks. Mock data is used to simulate financial transactions.
 
 ## How to Run
 npm install
