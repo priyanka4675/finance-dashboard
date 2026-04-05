@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { data } from "./data/data";
 import SummaryCard from "./components/SummaryCard";
 import Transactions from "./components/Transactions";
